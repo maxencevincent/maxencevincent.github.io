@@ -1,86 +1,147 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/test.css">
-		<script src="javascript.js"></script>
-		<title>mvlaboraty</title>
-		
-
-	</head>
-
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mvlaboraty</title>
+    <link rel="stylesheet" href="css/test.css">
+    <script src="javascript.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #bloc_page {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px 0;
+        }
+        #logo img {
+            max-width: 150px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 5px 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        #conteneur_intro {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+        .element_intro1, .element_intro2 {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        #article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .liens_image {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            #conteneur_intro {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
 <body>
-
-	<div id="bloc_page">
-
-		<header>
-
-			<div id="logo">
-				<a href="test.html" ><img src="css/images/logojaune.png" alt="logo"></a>
-			</div>
-
-			<nav>
-				<ul>
-					<li><a href="Recherches.html" >Research-</a></li>
-					<li><a href="CV_MV_en.pdf" >CV-</a></li>
-					<li><a href="Enseignements.html" >Teaching-</a></li>
-					<li><a href="Discussions.html" >Readings-</a></li>
-				</ul>
-			</nav>
-
-		</header>
-
-		<section>
-				<div id="conteneur_intro">
-					<div class="element_intro1">
-						<h1>Welcome! </h1>
-						<p>More about my research <a href="Recherches.html"> here</a>. </br>
-
-						
-					</div>
-
-					<div class="element_intro2">
-					<aside>
-						<h2>NEWS: 26-04-2020</h2>
-					
-		
-					</aside>
-					</div>	
-				</div>
-		
-		</section>		
-
-
-		<div id="article">	
-
-			<div>
-				<a href="Recherches.html" ><img src="css/images/recherche_figure.png" alt="recherche_image" class="liens_image"></a>
-			</div>
-			<div>
-				<a href="Enseignements.html" ><img src="css/images/enseignement_image.png" alt="recherche_image" class="liens_image"></a>
-			</div>
-			<div>
-				<a href="CV_MV_en.pdf" ><img src="css/images/cv_image.png" alt="recherche_image" class="liens_image"></a>
-			</div>
-			<div>
-				<a href="Discussions.html" ><img src="css/images/divers_image.png" alt="recherche_image" class="liens_image"></a>
-			</div>
-
-		</div>
-
-
-		
-
-			<footer>
-				<div id="bas_de_page1">
-					<p>Copyright: MV 2020 | Design: MV 2020</p>
-					<p>Contact : maxence.vincent@imm.cnrs.fr</p>
-					<p></p>
-				</div>
-
-			</footer>
-
-		</div>
-	</body>
-	
+    <div id="bloc_page">
+        <header>
+            <div id="logo">
+                <a href="Index.html"><img src="css/images/logojaune.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="Teaching.html">Teaching</a></li>
+                    <li><a href="Resources.html">Resources</a></li>
+                    <li><a href="Publications.html">Publications</a></li>
+                    <li><a href="CV.pdf">CV</a></li>
+                    <li><a href="Readings.html">Reading</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div id="conteneur_intro">
+                <div class="element_intro1">
+                    <h1>Welcome</h1>
+                    <p>I am a CNRS researcher working on bacterial stress responses. Find out more about it <a href="Recherches.html">here</a>.</p>
+                </div>
+                <div class="element_intro2">
+                    <h2>NEWS</h2>
+                    <p>New preprint blablablabal. Le résumé du cours 1 est disponible.</p>
+                    <h2>NEWS</h2>
+                    <p>New preprint blablablabal. Le résumé du cours 1 est disponible.</p>
+                </div>
+            </div>
+        </section>
+        <div id="article">
+            <div>
+                <a href="Research.html"><img src="css/images/Research.png" alt="Research" class="liens_image"></a>
+            </div>
+            <div>
+                <a href="Teaching.html"><img src="css/images/Teaching.png" alt="Teaching" class="liens_image"></a>
+            </div>
+            <div>
+                <a href="Resources.html"><img src="css/images/Resources.png" alt="Resources" class="liens_image"></a>
+            </div>
+            <div>
+                <a href="Publications.html"><img src="css/images/Publication.png" alt="Publications" class="liens_image"></a>
+            </div>
+            <div>
+                <a href="Readings.html"><img src="css/images/Readings.png" alt="Readings" class="liens_image"></a>
+            </div>
+        </div>
+        <footer>
+            <div id="bas_de_page1">
+                <p>Copyright: MV 2020 | Design: MV 2020</p>
+                <p>Contact: mvincent@imm.cnrs.fr</p>
+                <p>All information on this website is copyright to Maxence Vincent unless otherwise stated.</p>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
