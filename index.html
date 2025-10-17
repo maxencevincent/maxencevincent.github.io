@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maxence VINCENT - Research Group</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="custom-header" id="top">
+    <div class="header-logo left">
+      <a href="#top" aria-label="Go to top">
+        <img id="logo-left" src="images/logo__light1.png" alt="Left Logo" />
+      </a>
+    </div>
+    <div class="header-text professional">
+      <p class="line1">Maxence VINCENT - Research Page</p>
+      <p class="line2">CNRS - LCB - Marseille (FRANCE)</p>
+      <p class="line3">We study how bacteria survive the oxidative attacks from the immune system and biocides</p>
+    </div>
+    <div class="header-logo right" aria-hidden="true">
+      <img id="logo-right" src="images/logo__light1.png" alt="Menu icon">
+    </div>
+  </header>
+
+  <!-- NAV (sticky) -->
+  <nav class="sticky-nav" aria-label="Main">
+    <div class="inner">
+      <a href="#home" aria-current="true">Home</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#publications">Publications</a>
+      <a href="#resources">Resources</a>
+      <a href="#fundings">Fundings</a>
+      <a href="#crew">Crew</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <main id="home" class="section-wrap" aria-labelledby="home-title">
+    <h2 id="home-title" style="position:absolute;left:-9999px;">Home</h2>
+    <section class="gallery">
+      <div class="gallery-item"><img src="FIGURES/Gel.PNG" alt="Gel" loading="lazy" data-caption="Palindrome: OMG A GMO" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Membrane.PNG" alt="Membrane" loading="lazy" data-caption="Life emerges where inside meets outside water." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><video src="FIGURES/Big-chamber.mp4" autoplay muted loop preload="none" data-caption="Tiny cells in BIG chamber" onclick="openOverlay(this)"></video></div>
+      <div class="gallery-item"><img src="FIGURES/WetDry.PNG" alt="WetDry" loading="lazy" data-caption="Do you see the world through wet or dry lenses?" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Serpentine.PNG" alt="Serpentine" loading="lazy" data-caption="Zigzagging through the serpentine path." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><video src="FIGURES/Small-chamber.mp4" autoplay muted loop preload="none" data-caption="Better together" onclick="openOverlay(this)"></video></div>
+      <div class="gallery-item"><img src="FIGURES/Syringe.PNG" alt="Syringe" loading="lazy" data-caption="Note for students: it is a good sign when doing experiments makes you feel like a child again." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Salmonella.png" alt="Salmonella" loading="lazy" data-caption="We use the bacterium Salmonella Typhimurium as our model organism." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><video src="FIGURES/Spaghetti.mp4" autoplay muted loop preload="none" data-caption="Spaghetti E. coli: Con Ampicillin, per favore!" onclick="openOverlay(this)"></video></div>
+      <div class="gallery-item"><img src="FIGURES/Enzymo.PNG" alt="Enzymo" loading="lazy" data-caption="Deciphering life: Enzymatic in method, Enigmatic in meaning." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Plasma.PNG" alt="Plasma" loading="lazy" data-caption="What better window on the world than the porthole of his own plasma chamber?" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><video src="FIGURES/Y-junction.mp4" autoplay muted loop preload="none" data-caption="We use Y-junctions in the hope of answering our Y-questions." onclick="openOverlay(this)"></video></div>
+      <div class="gallery-item"><img src="FIGURES/Clones.PNG" alt="Clones" loading="lazy" data-caption="Purple clones" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Redox.png" alt="Redox" loading="lazy" data-caption="Most of our work focuses on how microbes respond to oxidative stress." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><video src="FIGURES/Chitosan.mp4" autoplay muted loop preload="none" data-caption="From single-cells to population" onclick="openOverlay(this)"></video></div>
+      <div class="gallery-item"><video src="FIGURES/MM.mp4" autoplay muted loop preload="none" data-caption="Mother cells and their progeny" onclick="openOverlay(this)"></video></div>
+      <div class="gallery-item"><img src="FIGURES/Sequencing.png" alt="Sequencing" loading="lazy" data-caption="What do you code for?" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Wafer.PNG" alt="Wafer" loading="lazy" data-caption="In France, wafers are called wafers and they’re measured in inches :/" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Neutro.png" alt="Neutrophil chase" loading="lazy" data-caption="Some neutrophils chasing bacteria" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Neutrophils.png" alt="Neutrophils" loading="lazy" data-caption="We aim to understand how bacteria defend themselves against the immune system, with a focus on the oxidative burst generated by neutrophils." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/SMLM.png" alt="SMLM" loading="lazy" data-caption="Random walk on the wild side." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><video src="FIGURES/Blackbox.mp4" autoplay muted loop preload="none" data-caption="One of our magic blackboxes" onclick="openOverlay(this)"></video></div>
+      <div class="gallery-item"><img src="FIGURES/Flasks.png" alt="Flasks" loading="lazy" data-caption="Where everything started." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Chemicals.png" alt="Chemicals" loading="lazy" data-caption="Is anyone missing?" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Structure.png" alt="Structure" loading="lazy" data-caption="When geometry becomes function." onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Plasmid.png" alt="Plasmid" loading="lazy" data-caption="New map unlocked" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/ROS.png" alt="Microfluidics" loading="lazy" data-caption="Our work combines: Redox Biology, Bioinformatics, Biochemistry, Microscopy, Microfluidics and Genetics" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/Marseille.png" alt="Marseille" loading="lazy" data-caption="And we do all of this in beautiful Marseille (FRANCE)" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/CNRS.png" alt="CNRS" loading="lazy" data-caption="Our lab is based on the CNRS Joseph Aiguier campus in Marseille" onclick="openOverlay(this)" /></div>
+      <div class="gallery-item"><img src="FIGURES/AMU.png" alt="AMU" loading="lazy" data-caption="We are hosted in a mixed research unit between CNRS and Aix Marseille University" onclick="openOverlay(this)" /></div>
+    </section>
+  </main>
+
+  <!-- RESEARCH (collapsible) -->
+  <section id="research" class="section-wrap">
+    <details class="accordion">
+      <summary><span class="chev">▶</span> Research</summary>
+      <div class="panel">
+        <div class="gallery gallery-vertical">
+          <div class="gallery-item">
+            <img src="FIGURES/research-figure1.png"
+                 alt="Redox" loading="lazy"
+                 data-title="Responses of Enterobacteria to MPO-derived oxidative attacks"
+                 data-caption="Neutrophils are central to the innate immune response, where they eliminate invading microbes through phagocytosis and the rapid production of reactive oxidants during the respiratory burst. Among these, oxidants generated by the enzyme myeloperoxidase (MPO) play a particularly potent role in antimicrobial activity. Despite their biological importance, the short-lived and chemically diverse nature of these species makes it challenging to determine how they affect bacterial cells in space and time. Our research aims to elucidate how bacteria withstand these oxidative assaults, using Salmonella enterica as a clinically relevant pathogen and Escherichia coli as a non-pathogenic model. To investigate these interactions, we combine microfluidics, live-cell fluorescence imaging, bacterial genetics, biochemistry, redox chemistry, and bioinformatics. This integrative approach enables us to probe bacterial stress responses under immune-derived oxidative pressure, uncover new genes and protein functions involved in oxidative stress defence, and ultimately contribute to a better understanding of how infections might be treated more effectively."
+                 onclick="openOverlay(this)" />
+          </div>
+          <div class="gallery-item">
+            <img src="FIGURES/research-figure2.png"
+                 alt="Repair Systems" loading="lazy"
+                 data-title="Links between biocide tolerance and antimicrobial resistance"
+                 data-caption="We investigate how bacteria adapt to biocides and how this adaptation can drive antimicrobial resistance (AMR). Biocides (e.g., disinfectants) are widely used in hospitals to prevent infections, but their use may also contribute to the rise of antibiotic resistance. Although growing evidence suggests exposure to biocides may select for cross-tolerance to antibiotics, the underlying mechanisms remain poorly understood. To explore this link, we combine whole bacterial genome sequencing, proteomics and experimental evolution platforms. Our aim here is to advance understanding of emerging threats to infection control and public health."
+                 onclick="openOverlay(this)" />
+          </div>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- TEACHING (collapsible) -->
+<section id="teaching" class="section-wrap">
+  <details class="accordion">
+    <summary><span class="chev">▶</span> Teaching</summary>
+    <div class="panel">
+      <p>This page hosts course modules, slides, and notebooks for AMU students.</p>
+      <div class="modules-grid">
+        <a class="module-card" href="teaching/module-bioinformatics.html">
+          <div class="module-pill">Lectures</div>
+          <h3>Bacterial Stress Responses</h3>
+          <p>L3 Wuhan</p>
+          <div class="module-meta"><span>Nov/Dec 2025</span></div>
+        </a>
+
+        <a class="module-card" href="teaching/20251202.pdf">
+          <div class="module-pill">Journal Club / Lecture</div>
+          <h3>List of Papers Discussed in this Course</h3>
+          <p>AMU MIF Master 1 students</p>
+          <div class="module-meta"><span>Feb 2025</span></div>
+        </a>
+
+        <a class="module-card" href="teaching/20240109.pdf">
+          <div class="module-pill">Lecture</div>
+          <h3>Antibiotic-induced Mutagenesis</h3>
+          <p>AMU MIF Master 1 students</p>
+          <div class="module-meta"><span>Jan 2024</span></div>
+        </a>
+
+        <a class="module-card" href="teaching/20230910.pdf">
+          <div class="module-pill">Lecture</div>
+          <h3>Single-cell Era in Microbiology</h3>
+          <p>AMU MIF Master 2 students</p>
+          <div class="module-meta"><span>Oct 2023</span></div>
+        </a>
+
+        <a class="module-card" href="teaching/20220921.pdf">
+          <div class="module-pill">Lecture</div>
+          <h3>Non-genetic Variability in Microbiology</h3>
+          <p>AMU MIF Master 2 students</p>
+          <div class="module-meta"><span>Sep 2022</span></div>
+        </a>
+
+        <a class="module-card" href="teaching/2022L3Wuhan.pdf">
+          <div class="module-pill">Lectures</div>
+          <h3>Replication - Repair - Regulation</h3>
+          <p>L3 Wuhan</p>
+          <div class="module-meta"><span>Nov/Dec 2022, 2023, 2024</span></div>
+        </a>
+
+      </div>
+    </div>
+  </details>
+</section>
+
+
+  <!-- PUBLICATIONS (collapsible) -->
+  <section id="publications" class="section-wrap">
+    <details class="accordion">
+      <summary><span class="chev">▶</span> Publications</summary>
+      <div class="panel">
+        <div class="publications-list">
+          <ol reversed>
+            <li><a href="https://doi.org/10.1371/journal.pbio.3003411" target="_blank">Loiseau, L.; De Visch, N.; Vergnes, A.; Armengaud, J.; Vincent, M. S.; Ezraty, B.. Repair of oxidized methionine residues in the chaperone Spy maintains periplasmic proteostasis under chlorite stress in Escherichia coli. <em>PLoS Biol</em> 2025,<strong>23</strong> (9), e3003411</a></li>
+            <li><a href="https://doi.org/10.1038/s41467-023-44426-1" target="_blank">Bongiovanni, T. R.; Latario, C. J.; Le Cras, Y.; Trus, E.; Robitaille, S.; Swartz, K.; Schmidtke, D.; Vincent, M.; Kosta, A.; Orth, J.; Stengel, F.; Pellarin, R.; Rocha, E. P. C.; Ross, B. D.; Durand, E. Assembly of a Unique Membrane Complex in Type VI Secretion Systems of Bacteroidota. <em>Nat Commun</em> 2024, <strong>15</strong> (1), 429.</a></li>
+            <li><a href="https://doi.org/10.1128/spectrum.04991-22" target="_blank">Vincent, M. S.; Vergnes, A.; Ezraty, B. Chlorate Contamination in Commercial Growth Media as a Source of Phenotypic Heterogeneity within Bacterial Populations. <em>Microbiology Spectrum</em> 2023, <strong>11</strong> (2), e04991-22.</a></li>
+            <li><a href="https://doi.org/10.1111/mmi.15000" target="_blank">Vincent, M. S.; Ezraty, B. Methionine Oxidation in Bacteria: A Reversible Post-Translational Modification. <em>Molecular Microbiology</em> 2023, <strong>119</strong> (2), 143–150.</a></li>
+            <li><a href="https://doi.org/10.1371/journal.pbio.3001443" target="_blank">Vincent, M. S.; Hervada, C. C.; Sebban-Kreuzer, C.; Guenno, H. L.; Chabalier, M.; Kosta, A.; Guerlesquin, F.; Mignot, T.; McBride, M. J.; Cascales, E.; Doan, T. Dynamic Proton-Dependent Motors Power Type IX Secretion and Gliding Motility in Flavobacterium. <em>PLOS Biology</em> 2022, <strong>20</strong> (3), e3001443.</a></li>
+            <li><a href="https://doi.org/10.1093/nar/gkab1143" target="_blank">Vincent, M. S.; Uphoff, S. Cellular Heterogeneity in DNA Alkylation Repair Increases Population Genetic Plasticity. <em>Nucleic Acids Research</em> 2021, <strong>49</strong> (21), 12320–12331.</a></li>
+            <li><a href="https://doi.org/10.1042/BST20190364" target="_blank">Vincent, M. S.; Uphoff, S. Bacterial Phenotypic Heterogeneity in DNA Repair and Mutagenesis. <em>Biochemical Society Transactions</em> 2020, <strong>48</strong> (2), 451–462.</a></li>
+            <li><a href="https://doi.org/10.1101/483123" target="_blank">Vincent, M. S.; Chabalier, M.; Cascales, E. A Conserved Motif of Porphyromonas Type IX Secretion Effectors C-Terminal Secretion Signal Specifies Interactions with the PorKLMN Core Complex. <em>bioRxiv</em> November 29, 2018, p 483123.</a></li>
+            <li><a href="https://doi.org/10.1038/s41467-017-02784-7" target="_blank">Leone, P.; Roche, J.; Vincent, M. S.; Tran, Q. H.; Desmyter, A.; Cascales, E.; Kellenberger, C.; Cambillau, C.; Roussel, A.; Type IX Secretion System PorM and Gliding Machinery GldM Form Arches Spanning the Periplasmic Space. <em>Nat Commun</em> 2018, <strong>9</strong> (1), 429.</a></li>
+            <li><a href="https://doi.org/10.1074/jbc.M116.765081" target="_blank">Vincent, M. S.; Canestrari, M. J.; Leone, P.; Stathopulos, J.; Ize, B.; Zoued, A.; Cambillau, C.; Kellenberger, C.; Roussel, A.; Cascales, E. Characterization of the Porphyromonas Gingivalis Type IX Secretion Trans-Envelope PorKLMNP Core Complex. <em>J. Biol. Chem.</em> 2017, <strong>292</strong> (8), 3252–3261.</a></li>
+            <li><a href="https://doi.org/10.1007/978-1-4939-7033-9_8" target="_blank">Vincent, M. S.; Cascales, E. Probing Inner Membrane Protein Topology by Proteolysis. In <em>Bacterial Protein Secretion Systems: Methods and Protocols</em>; Journet, L., Cascales, E., Eds.; Springer: New York, NY, 2017; pp 97–103.</a></li>
+            <li><a href="https://doi.org/10.3389/fcimb.2016.00096" target="_blank">Vincent, M. S.; Durand, E.; Cascales, E. The PorX Response Regulator of the Porphyromonas Gingivalis PorXY Two-Component System Does Not Directly Regulate the Type IX Secretion Genes but Binds the PorL Subunit. <em>Front. Cell. Infect. Microbiol.</em> 2016, <strong>6</strong>.</a></li>
+          </ol>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- RESOURCES (collapsible) -->
+  <section id="resources" class="section-wrap">
+    <details class="accordion">
+      <summary><span class="chev">▶</span> Resources</summary>
+      <div class="panel">
+        <p>MMDE: This app allows users to visualize data from mother machine experiments, especially CSV outputs from the BACMMAN plugin (FIJI).</p>
+        <div class="app-logo-wrapper">
+          <a href="https://github.com/maxencevincent/MMDE-app" target="_blank" rel="noopener">
+            <img src="FIGURES/MMDE.png" alt="Mother Machine Data Explorer Logo" class="app-logo" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="panel">
+        <p><b><u>Lab Protocol:</u></b> Chip Making and Experimental Setup (microfluidics, videomicroscopy, analyses)</p>
+        <div class="app-logo-wrapper">
+          <a href="https://" target="_blank" rel="noopener">
+            <img src="FIGURES/chip.png" alt="Chip" class="app-logo" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="panel">
+        <p><b><u>Lab Protocol:</u></b> Bioreactor Assembly and Manipulation</p>
+        <div class="app-logo-wrapper">
+          <a href="https://" target="_blank" rel="noopener">
+            <img src="FIGURES/bioreactor.png" alt="Bioreactors" class="app-logo" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="panel">
+        <p><b><u>Lab Protocol:</u></b> Media and Buffers</p>
+        <div class="app-logo-wrapper">
+          <a href="https://" target="_blank" rel="noopener">
+            <img src="FIGURES/recette.png" alt="Media" class="app-logo" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="panel">
+        <p><b><u>Lab Protocol:</u></b> Cloning and Genetics (E. coli and Salmo)</p>
+        <div class="app-logo-wrapper">
+          <a href="https://" target="_blank" rel="noopener">
+            <img src="FIGURES/dna.png" alt="Cloning" class="app-logo" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="panel">
+        <p><b><u>Lab Protocol:</u></b> Biochemistry and Enzymatic Assays</p>
+        <div class="app-logo-wrapper">
+          <a href="https://" target="_blank" rel="noopener">
+            <img src="FIGURES/bioch.png" alt="Bioch" class="app-logo" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="panel">
+        <p><b><u>Lab Protocol:</u></b> Templates for LabNotebook and LabMeetings</p>
+        <div class="app-logo-wrapper">
+          <a href="https://" target="_blank" rel="noopener">
+            <img src="FIGURES/labnotebook.png" alt="Bioch" class="app-logo" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- FUNDINGS (collapsible) -->
+  <section id="fundings" class="section-wrap">
+    <details class="accordion">
+      <summary><span class="chev">▶</span> Fundings</summary>
+      <div class="panel">
+        <div class="gallery">
+          <div class="gallery-item"><img src="FIGURES/ANR.png" alt="ANR" loading="lazy" data-title="ANR" data-caption="2025-2028: We are grateful to the ANR for funding our Junior PI (JCJC) project: AMORE!" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/Innovation.png" alt="CNRS Innovation" loading="lazy" data-title="CNRS Innovation" data-caption="2025-2027: We are grateful to CNRS Innovation for funding our project: ANTIOXYFLOW! This project is led by Maxence and Dr Benjamin Ezraty (DR CNRS, LCB)" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/Centuri.png" alt="CENTURI" loading="lazy" data-title="CENTURI" data-caption="2024-2027 - We are gratefull to CENTURI for funding Matt Jones in his PhD journey!" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/IM2B.png" alt="IM2B" loading="lazy" data-title="IM2B" data-caption="2024: We thank the IM2B for their support through the IM2B Nouveaux Entrants funding!" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/MSCA.png" alt="MSCA PF" loading="lazy" data-title="MSCA" data-caption="2023-2025: MSCA postdoctoral fellowship (MV)" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/AMU.png" alt="AMU" loading="lazy" data-title="AMU" data-caption="We thank AMU for its support in our projects!" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/CNRS.png" alt="CNRS" loading="lazy" data-title="CNRS" data-caption="We thank CNRS for its support in our projects!" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/LCB.png" alt="LCB" loading="lazy" data-title="LCB" data-caption="We thank LCB for its support in our projects!" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/IMM.png" alt="IMM" loading="lazy" data-title="IMM" data-caption="We thank all IMM members and facilities for their support in our projects!" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/HFSP.png" alt="HFSP" loading="lazy" data-title="HFSP" data-caption="2019-2022: HFSP postdoc (MV)" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/EMBO.png" alt="EMBO" loading="lazy" data-title="EMBO" data-caption="2019-2021: EMBO postdoc (MV, non-stipendary)" onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/FRM.png" alt="FRM" loading="lazy" data-title="FRM" data-caption="2018-2019: End-of-thesis grant (MV)" onclick="openOverlay(this)" /></div>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- CREW (collapsible) -->
+  <section id="crew" class="section-wrap">
+    <details class="accordion">
+      <summary><span class="chev">▶</span> Crew</summary>
+      <div class="panel">
+        <div class="gallery">
+          <div class="gallery-item"><img src="FIGURES/MV.PNG" alt="MV" loading="lazy" data-caption="Maxence Vincent: CNRS - Principal Investigator." onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/MJ.PNG" alt="MJ" loading="lazy" data-caption="Matthew Jones: CENTURI PhD student co-supervised with Dr Florence Bansept (CNRS). Matt combines microscopy and modelling to investigate how Salmonella copes with unconventional oxidants." onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/MB.PNG" alt="MB" loading="lazy" data-caption="Margot Beltran: Research Engineer - CNRS Innovation (ANTIOXYFLOW). Margot works on a project led by Maxence and Dr Benjamin Ezraty to develop microfluidic-based screening platforms." onclick="openOverlay(this)" /></div>
+          <div class="gallery-item"><img src="FIGURES/JB.PNG" alt="JB" loading="lazy" data-caption="Jérome Becam: Research Engineer - ANR (AMORE). Jérome uses biochemistry and microfluidics to investigate oxidative damage repair." onclick="openOverlay(this)" /></div>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- CONTACT (collapsible) -->
+  <section id="contact" class="section-wrap">
+    <details class="accordion">
+      <summary><span class="chev">▶</span> Contact</summary>
+      <div class="panel">
+        <p style="margin: 0 auto; margin-top:3rem; text-align:center; max-width:800px;"> Interested in our research or joining the team? Feel free to reach out!</p>
+        <p style="margin: 0 auto; margin-top:3rem; text-align:center; max-width:800px;"> Maxence's email: <a href="mailto:mvincent@imm.cnrs.fr">mvincent@imm.cnrs.fr</a></p>
+        <p style="margin: 0 auto; margin-top:3rem; text-align:center; max-width:800px;">
+          <a href="https://lcb.cnrs.fr/" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">
+            Laboratoire de Chimie Bactérienne (LCB), CNRS, 31 Chemin Joseph Aiguier, 13009 Marseille, France
+          </a>
+        </p>
+        <div class="map-embed-wrapper" style="margin-top:1rem;">
+          <iframe title="Google Map — LCB CNRS Marseille" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=Laboratoire%20de%20Chimie%20Bact%C3%A9rienne%20CNRS%2C%2031%20Chemin%20Joseph%20Aiguier%2C%2013009%20Marseille&hl=en&z=15&output=embed">
+          </iframe>
+        </div>
+        <p style="margin: 0 auto; margin-top:3rem;  text-align:center; max-width:800px;">
+          Our lab is just 10 minutes from downtown Marseille: France’s second city, founded by the Greeks 600 years BC and only 15 minutes from the Calanques, a paradise for climbing, hiking, and sea adventures.
+        </p>
+        <p style="margin: 0 auto; margin-top:3rem; text-align:center; max-width:800px;">
+          The perfect spot to enjoy city life or recharge on the trails between plasmid minipreps!
+        </p>
+        <div class="lab-photos-grid">
+          <figure class="lab-photo">
+            <a href="https://www.calanques-parcnational.fr/en" target="_blank" rel="noopener">
+              <img src="FIGURES/morgiou.jpg" alt="La calanque de Morgiou" loading="lazy">
+            </a>
+            <figcaption>Morgiou</figcaption>
+          </figure>
+
+          <figure class="lab-photo">
+            <a href="https://www.marseille-tourisme.com/en/" target="_blank" rel="noopener">
+              <img src="FIGURES/VP.jpg" alt="Vieux-Port" loading="lazy">
+            </a>
+            <figcaption>Vieux-Port</figcaption>
+          </figure>
+
+          <figure class="lab-photo">
+            <a href="https://tarpin-bien.com/" target="_blank" rel="noopener">
+              <img src="FIGURES/NDG.jpg" alt="Notre Dame" loading="lazy">
+            </a>
+            <figcaption>Notre Dame de la Garde</figcaption>
+          </figure>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- OVERLAY -->
+  <div id="overlay" aria-hidden="true">
+    <div id="overlay-content">
+      <span id="overlay-close" aria-label="Close">✕</span>
+      <div id="overlay-media"></div>
+      <div id="overlay-caption"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>
+      Unless otherwise stated, all content on this website (texts, images, videos, code) is the intellectual property of Maxence VINCENT.<br>
+      It is licensed under a
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">
+        Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)
+      </a>.
+    </p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
